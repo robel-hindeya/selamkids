@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 import { PARENT_PIN_COOKIE } from '@/backend/constants/roles';
 import { ParentGateModal } from '@/components/auth/parent-gate-modal';
 import { ParentLockExitButton } from '@/components/navigation/parent-gate-button';
-import { ShieldAlert, BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
 export default async function FamiliesLayout({

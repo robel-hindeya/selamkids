@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { Heart, Lock, ShieldCheck, LogOut, ArrowRight, UserCheck } from 'lucide-react';
+import { Heart, Lock, ArrowRight } from 'lucide-react';
 import { ParentGateModal } from '@/components/auth/parent-gate-modal';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';

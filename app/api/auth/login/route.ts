@@ -1,16 +1,13 @@
 import { NextRequest } from 'next/server';
-import { getServerDb } from '@/backend/db/server';
-import { UserRepository } from '@/backend/db/repositories/user.repository';
 import { AuditLogRepository } from '@/backend/db/repositories/audit-log.repository';
 import { loginSchema } from '@/backend/validation/auth.schema';
 import { apiSuccess } from '@/backend/utils/response';
 import { handleApiError } from '@/backend/errors/api-error';
 import { UnauthorizedError } from '@/backend/errors/auth-error';
-import { ROLE_REDIRECTS, ROLES, UserRole } from '@/backend/constants/roles';
+import { ROLE_REDIRECTS } from '@/backend/constants/roles';
 import { AUDIT_ACTION } from '@/backend/constants/status';
 import {
   LOCAL_SESSION_COOKIE,
-  DEMO_ACCOUNTS,
   createLocalSession,
   encodeSession,
 } from '@/backend/auth/session/local-session';

@@ -6,7 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { PARENT_PIN_COOKIE } from '@/backend/constants/roles';
 import { ParentGateModal } from '@/components/auth/parent-gate-modal';
-import { Lock, BookOpen, PenTool, User, Settings } from 'lucide-react';
+import { Lock, BookOpen, User } from 'lucide-react';
 
 export interface SidebarItem {
   label: string;

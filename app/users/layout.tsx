@@ -11,7 +11,6 @@ import {
   FolderOpen,
   Settings,
   User,
-  PenTool,
 } from 'lucide-react';
 import { ROLES } from '@/backend/constants/roles';
 

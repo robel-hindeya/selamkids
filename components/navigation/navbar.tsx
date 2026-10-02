@@ -8,7 +8,6 @@ import {
   Shield,
   Compass,
   Settings,
-  Heart,
   Home,
   User as UserIcon,
   BookOpen,

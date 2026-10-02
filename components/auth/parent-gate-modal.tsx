@@ -16,7 +16,6 @@ import {
   CheckCircle2,
   AlertCircle,
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 export interface ParentGateModalProps {
@@ -44,7 +43,7 @@ export function ParentGateModal({
   const [pin, setPin] = React.useState<string>('');
   const [confirmPin, setConfirmPin] = React.useState<string>('');
   const [step, setStep] = React.useState<'verify' | 'setup_first' | 'setup_confirm'>('verify');
-  const [hasPinConfigured, setHasPinConfigured] = React.useState<boolean | null>(null);
+  const [_hasPinConfigured, setHasPinConfigured] = React.useState<boolean | null>(null);
 
   const [loading, setLoading] = React.useState<boolean>(false);
   const [error, setError] = React.useState<string | null>(null);
