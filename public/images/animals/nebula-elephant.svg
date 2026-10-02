@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="elephantBody" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#b388ff"/>
+      <stop offset="70%" stop-color="#7c4dff"/>
+      <stop offset="100%" stop-color="#651fff"/>
+    </radialGradient>
+    <radialGradient id="innerEar" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff80ab"/>
+      <stop offset="100%" stop-color="#ea80fc"/>
+    </radialGradient>
+    <filter id="elephantGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#7c4dff" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#elephantGlow)">
+    <!-- Giant Playful Ears -->
+    <ellipse cx="40" cy="95" rx="36" ry="42" fill="url(#elephantBody)" transform="rotate(-15 40 95)"/>
+    <ellipse cx="42" cy="95" rx="24" ry="28" fill="url(#innerEar)" opacity="0.8" transform="rotate(-15 42 95)"/>
+
+    <ellipse cx="160" cy="95" rx="36" ry="42" fill="url(#elephantBody)" transform="rotate(15 160 95)"/>
+    <ellipse cx="158" cy="95" rx="24" ry="28" fill="url(#innerEar)" opacity="0.8" transform="rotate(15 158 95)"/>
+
+    <!-- Round Head -->
+    <ellipse cx="100" cy="100" rx="54" ry="50" fill="url(#elephantBody)"/>
+
+    <!-- Cute Little Tuft of Hair on Top -->
+    <path d="M 94 52 Q 97 42 100 45 Q 103 40 106 52 Z" fill="#b388ff"/>
+
+    <!-- Big Sparkly Eyes -->
+    <ellipse cx="76" cy="92" rx="13" ry="16" fill="#150930"/>
+    <circle cx="72" cy="86" r="5.5" fill="#ffffff"/>
+    <circle cx="79" cy="98" r="2.5" fill="#ffffff"/>
+
+    <ellipse cx="124" cy="92" rx="13" ry="16" fill="#150930"/>
+    <circle cx="120" cy="86" r="5.5" fill="#ffffff"/>
+    <circle cx="127" cy="98" r="2.5" fill="#ffffff"/>
+
+    <!-- Rosy Cheeks -->
+    <ellipse cx="60" cy="112" rx="10" ry="6" fill="#ff4081" opacity="0.35"/>
+    <ellipse cx="140" cy="112" rx="10" ry="6" fill="#ff4081" opacity="0.35"/>
+
+    <!-- Curved Cheerful Trunk (curling upward happily) -->
+    <path d="M 90 105 C 90 135 78 150 78 165 C 78 178 95 180 102 170 C 108 160 104 148 108 135 C 110 120 110 105 110 105 Z" fill="#7c4dff" stroke="#651fff" stroke-width="2"/>
+
+    <!-- Trunk Wrinkle Lines -->
+    <path d="M 88 122 Q 97 125 106 122" stroke="#b388ff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 86 134 Q 96 137 104 134" stroke="#b388ff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 84 146 Q 93 149 101 146" stroke="#b388ff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Little Cute Tusks -->
+    <path d="M 78 120 C 70 125 68 135 75 138 C 80 138 82 130 82 122 Z" fill="#ffffff"/>
+    <path d="M 122 120 C 130 125 132 135 125 138 C 120 138 118 130 118 122 Z" fill="#ffffff"/>
+  </g>
+</svg>

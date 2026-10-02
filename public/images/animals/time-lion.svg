@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="lionMane" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9900"/>
+      <stop offset="70%" stop-color="#e65c00"/>
+      <stop offset="100%" stop-color="#b33c00"/>
+    </radialGradient>
+    <linearGradient id="lionFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#f5b300"/>
+    </linearGradient>
+    <linearGradient id="snoutGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff8db"/>
+      <stop offset="100%" stop-color="#ffecb3"/>
+    </linearGradient>
+    <filter id="glowShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#ff9900" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Big Fluffy Mane with Petals -->
+  <g filter="url(#glowShadow)">
+    <!-- Outer Mane Petals -->
+    <circle cx="100" cy="95" r="76" fill="url(#lionMane)"/>
+    <circle cx="50" cy="55" r="28" fill="#e65c00"/>
+    <circle cx="150" cy="55" r="28" fill="#e65c00"/>
+    <circle cx="32" cy="95" r="26" fill="#e65c00"/>
+    <circle cx="168" cy="95" r="26" fill="#e65c00"/>
+    <circle cx="48" cy="140" r="26" fill="#d94d00"/>
+    <circle cx="152" cy="140" r="26" fill="#d94d00"/>
+    <circle cx="100" cy="162" r="26" fill="#d94d00"/>
+    <circle cx="100" cy="28" r="24" fill="#ffaa00"/>
+  </g>
+
+  <!-- Ears -->
+  <circle cx="60" cy="48" r="18" fill="#f5b300"/>
+  <circle cx="60" cy="48" r="10" fill="#ff7043"/>
+  <circle cx="140" cy="48" r="18" fill="#f5b300"/>
+  <circle cx="140" cy="48" r="10" fill="#ff7043"/>
+
+  <!-- Face Head -->
+  <ellipse cx="100" cy="100" rx="55" ry="50" fill="url(#lionFace)"/>
+
+  <!-- Snout Background -->
+  <ellipse cx="100" cy="118" rx="28" ry="20" fill="url(#snoutGrad)"/>
+
+  <!-- Big Cute Cartoon Eyes -->
+  <!-- Left Eye -->
+  <ellipse cx="78" cy="92" rx="14" ry="17" fill="#1e1035"/>
+  <circle cx="74" cy="86" r="6" fill="#ffffff"/>
+  <circle cx="82" cy="98" r="2.5" fill="#ffffff"/>
+
+  <!-- Right Eye -->
+  <ellipse cx="122" cy="92" rx="14" ry="17" fill="#1e1035"/>
+  <circle cx="118" cy="86" r="6" fill="#ffffff"/>
+  <circle cx="126" cy="98" r="2.5" fill="#ffffff"/>
+
+  <!-- Eyebrows -->
+  <path d="M 68 70 Q 78 64 88 71" stroke="#8c3b00" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M 112 71 Q 122 64 132 70" stroke="#8c3b00" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Rosy Cheeks -->
+  <ellipse cx="60" cy="112" rx="9" ry="6" fill="#ff5252" opacity="0.35"/>
+  <ellipse cx="140" cy="112" rx="9" ry="6" fill="#ff5252" opacity="0.35"/>
+
+  <!-- Cute Heart/Triangle Nose -->
+  <path d="M 92 110 C 92 106 108 106 108 110 C 108 116 100 122 100 122 C 100 122 92 116 92 110 Z" fill="#5c1d00"/>
+
+  <!-- Whiskers/Smile -->
+  <path d="M 100 122 L 100 128" stroke="#5c1d00" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 100 128 Q 88 136 78 128" stroke="#5c1d00" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 100 128 Q 112 136 122 128" stroke="#5c1d00" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Whiskers dots -->
+  <circle cx="86" cy="120" r="1.5" fill="#8c3b00"/>
+  <circle cx="82" cy="123" r="1.5" fill="#8c3b00"/>
+  <circle cx="114" cy="120" r="1.5" fill="#8c3b00"/>
+  <circle cx="118" cy="123" r="1.5" fill="#8c3b00"/>
+
+  <!-- Magical Time Pendant / Star Crest -->
+  <circle cx="100" cy="160" r="12" fill="#ffd700" stroke="#b38600" stroke-width="2"/>
+  <circle cx="100" cy="160" r="8" fill="#ffffff" opacity="0.8"/>
+  <line x1="100" y1="160" x2="100" y2="155" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="100" y1="160" x2="104" y2="162" stroke="#e65c00" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

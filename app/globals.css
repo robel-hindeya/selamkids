@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Baloo 2', cursive, sans-serif;
+  --font-sans: 'Nunito', system-ui, sans-serif;
+  --background: #fdfaf6;
+  --foreground: #1c1335;
+  --night-dark: #0f0a26;
+  --night-deep: #160f38;
+  --magic-yellow: #ffc700;
+  --magic-yellow-shadow: #c99c00;
+  --magic-purple: #7c3aed;
+  --magic-purple-shadow: #5b21b6;
+  --magic-emerald: #10b981;
+  --magic-emerald-shadow: #047857;
+  --magic-cyan: #06b6d4;
+  --magic-cyan-shadow: #0e7490;
+  --magic-coral: #ff6b4a;
+  --magic-coral-shadow: #d94827;
+}
+
+.dark {
+  --background: #080318;
+  --foreground: #f8fafc;
+  --night-dark: #050210;
+  --night-deep: #0d0622;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3edf8;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0d0624;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbb4db;
+  border-radius: 9999px;
+  border: 2px solid #f3edf8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3b1f68;
+  border: 2px solid #0d0624;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9d78b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #5a2e99;
+}
+
+/* Night Zookeeper 3D Chunky Buttons */
+.btn-3d {
+  position: relative;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px);
+}
+
+.btn-3d:active {
+  transform: translateY(3px) !important;
+}
+
+/* Yellow 3D Button (The signature Night Zookeeper Start Trial / CTA) */
+.btn-3d-yellow {
+  background: #ffcc00;
+  color: #1a0f37;
+  box-shadow: 0 5px 0 #cc9900, 0 8px 15px rgba(204, 153, 0, 0.35);
+  border: 2px solid #ffe680;
+}
+.btn-3d-yellow:hover {
+  background: #ffd633;
+  box-shadow: 0 7px 0 #cc9900, 0 12px 20px rgba(204, 153, 0, 0.45);
+}
+.btn-3d-yellow:active {
+  box-shadow: 0 1px 0 #cc9900, 0 3px 6px rgba(204, 153, 0, 0.3);
+}
+
+/* Purple 3D Button (Magical Night Realm) */
+.btn-3d-purple {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: #ffffff;
+  box-shadow: 0 5px 0 #4c1d95, 0 8px 15px rgba(109, 40, 217, 0.35);
+  border: 2px solid #a78bfa;
+}
+.btn-3d-purple:hover {
+  background: linear-gradient(135deg, #9d74f7, #7c3aed);
+  box-shadow: 0 7px 0 #4c1d95, 0 12px 20px rgba(109, 40, 217, 0.45);
+}
+.btn-3d-purple:active {
+  box-shadow: 0 1px 0 #4c1d95, 0 3px 6px rgba(109, 40, 217, 0.3);
+}
+
+/* Green 3D Button (Success / Word Quests) */
+.btn-3d-green {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+  box-shadow: 0 5px 0 #15803d, 0 8px 15px rgba(22, 163, 74, 0.35);
+  border: 2px solid #86efac;
+}
+.btn-3d-green:hover {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  box-shadow: 0 7px 0 #15803d, 0 12px 20px rgba(22, 163, 74, 0.45);
+}
+.btn-3d-green:active {
+  box-shadow: 0 1px 0 #15803d, 0 3px 6px rgba(22, 163, 74, 0.3);
+}
+
+/* Coral 3D Button (Kid Playful / Challenges) */
+.btn-3d-coral {
+  background: #ff5757;
+  color: #ffffff;
+  box-shadow: 0 5px 0 #cc2929, 0 8px 15px rgba(255, 87, 87, 0.35);
+  border: 2px solid #ff9999;
+}
+.btn-3d-coral:hover {
+  background: #ff6b6b;
+  box-shadow: 0 7px 0 #cc2929, 0 12px 20px rgba(255, 87, 87, 0.45);
+}
+.btn-3d-coral:active {
+  box-shadow: 0 1px 0 #cc2929, 0 3px 6px rgba(255, 87, 87, 0.3);
+}
+
+/* Cyan 3D Button (Family / Water World) */
+.btn-3d-cyan {
+  background: #00bcd4;
+  color: #ffffff;
+  box-shadow: 0 5px 0 #008ba3, 0 8px 15px rgba(0, 188, 212, 0.35);
+  border: 2px solid #80deea;
+}
+.btn-3d-cyan:hover {
+  background: #26c6da;
+  box-shadow: 0 7px 0 #008ba3, 0 12px 20px rgba(0, 188, 212, 0.45);
+}
+.btn-3d-cyan:active {
+  box-shadow: 0 1px 0 #008ba3, 0 3px 6px rgba(0, 188, 212, 0.3);
+}
+
+/* White / Outline 3D Button */
+.btn-3d-white {
+  background: #ffffff;
+  color: #1a0f37;
+  box-shadow: 0 5px 0 #cbd5e1, 0 8px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid #f1f5f9;
+}
+.btn-3d-white:hover {
+  background: #f8fafc;
+  box-shadow: 0 7px 0 #cbd5e1, 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+.btn-3d-white:active {
+  box-shadow: 0 1px 0 #cbd5e1, 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Keyframe Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.8), 0 0 10px rgba(139, 92, 246, 0.6);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+/* Starry Night Sky Background */
+.night-sky-bg {
+  background-color: #0b0621;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(139, 92, 246, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(245, 158, 11, 0.15) 0%, transparent 35%);
+}
+
+.stars-pattern {
+  background-image: radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                    radial-gradient(2px 2px at 40px 70px, #ffd700, rgba(0,0,0,0)),
+                    radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                    radial-gradient(2px 2px at 160px 120px, #ffd700, rgba(0,0,0,0)),
+                    radial-gradient(1.5px 1.5px at 230px 80px, #ffffff, rgba(0,0,0,0)),
+                    radial-gradient(2px 2px at 300px 170px, #ff80df, rgba(0,0,0,0)),
+                    radial-gradient(1.5px 1.5px at 370px 60px, #ffffff, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 400px 250px;
+}
+
+/* Morphing Undefined Shapes Animations */
+@keyframes blobMorphOne {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: rotate(0deg) scale(1);
+  }
+  33% {
+    border-radius: 40% 60% 70% 30% / 50% 60% 30% 60%;
+    transform: rotate(4deg) scale(1.04);
+  }
+  66% {
+    border-radius: 70% 30% 50% 50% / 30% 50% 60% 40%;
+    transform: rotate(-3deg) scale(0.97);
+  }
+}
+
+@keyframes blobMorphTwo {
+  0%, 100% {
+    border-radius: 40% 60% 60% 40% / 50% 40% 60% 50%;
+    transform: rotate(0deg);
+  }
+  50% {
+    border-radius: 60% 40% 30% 70% / 40% 60% 40% 60%;
+    transform: rotate(-5deg) scale(1.05);
+  }
+}
+
+@keyframes bubbleFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(4deg);
+  }
+}
+
+.animate-blob-morph-1 {
+  animation: blobMorphOne 9s ease-in-out infinite;
+}
+
+.animate-blob-morph-2 {
+  animation: blobMorphTwo 11s ease-in-out infinite;
+}
+
+.animate-bubble-float {
+  animation: bubbleFloat 4s ease-in-out infinite;
+}
+
